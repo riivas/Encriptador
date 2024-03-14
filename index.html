@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Challenge ALURA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <img src="img/Logo.svg" class="logo" alt="Logo ALURA">
+            </div>
+        </header>
+        <main>
+            <section class="mensajeATrabajar">
+                <textarea class="texto-plano" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="info-btns">
+                    <div class="info">
+                        <h6><img src="img/bi_exclamation-circle-fill.png" alt="exclamción"> Solo letras minúsculas y sin acentos</h6>
+                    </div>   
+                    <div class="caja-btns">
+                        <button onclick="btnEncrypt();" class="btn" id="encriptar">Encriptar</button>
+                        <button onclick="btnDecrypt();" class="btn" id="desencriptar">Desencriptar</button>
+                    </div>
+                </div>   
+            </section>
+            <section class="mensajeTrabajado">
+                <textarea cols="20" rows="10" class="mensaje" hidden disabled></textarea>
+                <img src="img/Muñeco.svg" alt="muñeco" id="imagen">
+                <p id="no-texto1">
+                    <span class="textPrin">Ningun mensaje fue encontrado</span>
+                </p>
+                <p id="no-texto2">
+                    <span class="textSec">Ingrese el texto que desee encriptar o desencriptar</span>
+                </p>
+                <button class="btn" id="copiar" hidden>Copiar</button>
+            </section>
+        </main>
+        <script src="app.js"></script>
+    </body>
+    <footer class="links">
+        <div class="logos">
+            <a href="https://www.linkedin.com/in/riivas/" class="linkedin">
+                <img src="img/linkedin.png" alt="logo-linkedIn">
+            </a>
+            <a href="https://github.com/riivas" class="github">
+                <img src="img/github.png" alt="logo-Github" id="github">
+            </a>
+        </div>
+        <h6>Luis Enrique Perez Rivas | Grupo 6 ONE Oracle - ALURA 2024</h6>
+    </footer>
+</html>
